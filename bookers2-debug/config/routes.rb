@@ -10,11 +10,9 @@ Rails.application.routes.draw do
     resources :book_comments, only: [:create, :destroy]
   end
   resources :users, only: [:index, :show, :edit, :update] do
-    resource :relationships, only: [:create, :destroy]
-    get :follows, on: :member
-    get :followers, on: :member
+  	resource :relationships, only: [:create, :destroy]
+  	get 'followings' => 'relationships#followings', as: 'followings'
+  	get 'followers' => 'relationships#followers', as: 'followers'
   end
-  post 'follow/:id' => 'relationships#follow', as: 'follow' # フォローする
-  post 'unfollow/:id' => 'relationships#unfollow', as: 'unfollow' # フォロー外す
 
 end
