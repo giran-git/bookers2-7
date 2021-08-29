@@ -20,7 +20,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-ああ
+あ
 * ...
 
 https://drive.google.com/file/d/1IaqXyXU0JWZPwNBIdaGPBhX4lsS5DRV5/view?usp=sharing
